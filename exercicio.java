@@ -9,7 +9,7 @@ public class exercicio {
 
 	}
 	
-	public static void e1 (int n) {
+	public static void e1 (int n) { //funciona
 		if(n%2 == 0)
 			System.out.println("par");
 		else
@@ -17,7 +17,7 @@ public class exercicio {
 		
 	}
 	
-	public static void e2 (int n1, int n2) {
+	public static void e2 (int n1, int n2) {//funciona
 		if(n1 < n2)
 			System.out.println("N1 eh menor que n2");
 		else if(n1 > n2)
@@ -27,7 +27,7 @@ public class exercicio {
 		
 	}
 	
-	public static void e3() {
+	public static void e3() {//funciona
 		for(int i = 0; i< 101;i++){
 		       System.out.println(i);
 		}
@@ -87,18 +87,25 @@ public class exercicio {
 		else if(media > 5.76)
 			System.out.println("Aprovado");
 	}
-	public static void e12(int n) {
+	public static void e12(int n) { //primo:se divisivel por 1 ou ele mesmo,mas qq n eh div p 1,logo,testar se eh div p ele msm
 		if(n < 1)
 			System.out.println("Não eh possivel calcular se esse numero eh primo,pois ele eh menor que 1");
+			break;
 		else {
-			boolean primo = ((n % n == 0) && (n % 1 == 0)); //a principio nao tenho motivos p achar que eh primo
+		for(int i = 2; i <= (n/2); i++)
+		   if(n % n == 0)
+		      System.out.println("Esse numero eh primo");
+		   else
+			   System.out.println("Esse numero nao eh primo");
+			/*boolean primo = ((n % n == 0) && (n % 1 == 0)); //a principio nao tenho motivos p achar que eh primo
 			primo = true;
 			System.out.println(primo);
-		   /*if ((n % n == 0)&(n % 1 == 0) ) 
+		   if ((n % n == 0)&(n % 1 == 0) ) 
 			System.out.println("Esse numero eh primo");
 		   else
 			System.out.println("Esse numero nao eh primo");*/
 		}
+		
 		
 	}
 	
