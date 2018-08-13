@@ -106,6 +106,32 @@ public class exercicio {
 			System.out.println("Esse numero nao eh primo");*/
 		}
 		
+		public static void e13(int n) {
+	           int fat = 1;		
+		    for (i = 1; i<= n; i++){
+                       fat = fat * i;
+                       System.out.println(fat);
+			 
+		}
+		
+		public static void e16(int n) {
+		    for (int i = 1; i <= n; ++i) {
+		       if(n % i == 0)
+			  System.out.println(i);     
+		    }
+		}
+		
+		public static void e9(int n1,int n2) {
+		int soma = 0;
+		int cont = 0;
+		int media = 0;	
+		    for(int i = n1;i <= n2; i++)
+			soma += i;
+			cont ++;
+			media = soma / cont;
+		    System.out.println(soma);
+		    System.out.println(media);	
+		}	
 		
 	}
 	
