@@ -1,2 +1,2 @@
-# Exercicios-Poo-2-30-7
+# Exercicios-Poo-2
 Tem coisa aqui que não vai compilar,só coloquei aqui porque não estava achando meu pendrive,plus,é mais facil...
